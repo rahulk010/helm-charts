@@ -19,7 +19,7 @@
 images:
   repository: quay.io/rahulk10/microservice-demo
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "aJGZq4FSTxOefvCA3GG2gw"
+  tag: "7K3NqVRXTHGAbfTi70P30w"
 
 serviceAccounts:
   # Specifies whether service accounts should be created.
