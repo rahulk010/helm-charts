@@ -49,7 +49,7 @@ redis:
 # Optional — if your Helm chart uses a shared global tag value
 images:
   repository: quay.io/rahulk10
-  tag: "5olmojoCTdydf7eGHY074A"
+  tag: "FkGX9gAMQamehj51ExnGiw"
 
 loadGenerator:
   create: false
