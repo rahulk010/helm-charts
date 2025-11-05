@@ -205,7 +205,7 @@ cartDatabase:
     create: true
     name: redis-cart
     # Uses the public redis image from Docker Hub, otherwise will use the images.repository.
-    publicRepository: true
+    publicRepository: false
   externalRedisTlsOrigination:
     enable: false
     name: exernal-redis-tls-origination

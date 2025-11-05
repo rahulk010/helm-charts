@@ -42,6 +42,10 @@ shippingservice:
   image:
     repository: quay.io/rahulk10/shippingservice
 
+redis:
+  image:
+    repository: quay.io/rahulk10/redis
+
 # Optional — if your Helm chart uses a shared global tag value
 images:
   repository: quay.io/rahulk10
