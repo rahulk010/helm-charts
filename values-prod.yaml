@@ -45,4 +45,4 @@ shippingservice:
 # Optional — if your Helm chart uses a shared global tag value
 images:
   repository: quay.io/rahulk10
-  tag: "7K3NqVRXTHGAbfTi70P30w"
+  tag: "Nlq4sObCQtmefQNlnziOWw"
