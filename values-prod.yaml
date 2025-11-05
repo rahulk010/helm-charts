@@ -50,3 +50,8 @@ redis:
 images:
   repository: quay.io/rahulk10
   tag: "5olmojoCTdydf7eGHY074A"
+
+loadGenerator:
+  create: false
+  name: loadgenerator
+  checkFrontendInitContainer: true
