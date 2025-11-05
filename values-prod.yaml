@@ -1,0 +1,48 @@
+adservice:
+  image:
+    repository: quay.io/rahulk10/adservice
+
+cartservice:
+  image:
+    repository: quay.io/rahulk10/cartservice
+
+checkoutservice:
+  image:
+    repository: quay.io/rahulk10/checkoutservice
+
+currencyservice:
+  image:
+    repository: quay.io/rahulk10/currencyservice
+
+emailservice:
+  image:
+    repository: quay.io/rahulk10/emailservice
+
+frontend:
+  image:
+    repository: quay.io/rahulk10/frontend
+
+loadgenerator:
+  image:
+    repository: quay.io/rahulk10/loadgenerator
+
+paymentservice:
+  image:
+    repository: quay.io/rahulk10/paymentservice
+
+productcatalogservice:
+  image:
+    repository: quay.io/rahulk10/productcatalogservice
+
+recommendationservice:
+  image:
+    repository: quay.io/rahulk10/recommendationservice
+
+shippingservice:
+  image:
+    repository: quay.io/rahulk10/shippingservice
+
+# Optional — if your Helm chart uses a shared global tag value
+images:
+  repository: quay.io/rahulk10
+  tag: "7K3NqVRXTHGAbfTi70P30w"
