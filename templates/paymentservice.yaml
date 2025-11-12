@@ -43,6 +43,12 @@ spec:
       labels:
         app: {{ .Values.paymentService.name }}
     spec:
+      {{- if .Values.images.imagePullSecrets }}
+      imagePullSecrets:
+        {{- range .Values.images.imagePullSecrets }}
+        -name: {{ .name }}
+        {{- end }}
+      {{- end }}
       {{- if .Values.serviceAccounts.create }}
       serviceAccountName: {{ .Values.paymentService.name }}
       {{- else }}

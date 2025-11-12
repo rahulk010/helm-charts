@@ -45,6 +45,12 @@ spec:
       annotations:
         sidecar.istio.io/rewriteAppHTTPProbers: "true"
     spec:
+      {{- if .Values.images.imagePullSecrets }}
+      imagePullSecrets:
+        {{- range .Values.images.imagePullSecrets }}
+        -name: {{ .name }}
+        {{- end }}
+      {{- end }}
       {{- if .Values.serviceAccounts.create }}
       serviceAccountName: {{ .Values.frontend.name }}
       {{- else }}

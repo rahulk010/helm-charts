@@ -43,6 +43,12 @@ spec:
       labels:
         app: {{ .Values.checkoutService.name }}
     spec:
+      {{- if .Values.images.imagePullSecrets }}
+      imagePullSecrets:
+        {{- range .Values.images.imagePullSecrets }}
+        -name: {{ .name }}
+        {{- end }}
+      {{- end }}
       {{- if .Values.serviceAccounts.create }}
       serviceAccountName: {{ .Values.checkoutService.name }}
       {{- else }}

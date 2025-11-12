@@ -47,6 +47,12 @@ spec:
       labels:
         app: {{ .Values.cartService.name }}
     spec:
+      {{- if .Values.images.imagePullSecrets }}
+      imagePullSecrets:
+        {{- range .Values.images.imagePullSecrets }}
+        -name: {{ .name }}
+        {{- end }}
+      {{- end }}
       {{- if .Values.serviceAccounts.create }}
       serviceAccountName: {{ .Values.cartService.name }}
       {{- else }}
@@ -226,6 +232,12 @@ spec:
       labels:
         app: {{ .Values.cartDatabase.inClusterRedis.name }}
     spec:
+      {{- if .Values.images.imagePullSecrets }}
+      imagePullSecrets:
+        {{- range .Values.images.imagePullSecrets }}
+        -name: {{ .name }}
+        {{- end }}
+      {{- end }}
       {{- if .Values.serviceAccounts.create }}
       serviceAccountName: {{ .Values.cartDatabase.inClusterRedis.name }}
       {{- else }}
