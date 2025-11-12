@@ -50,7 +50,7 @@ spec:
       {{- if .Values.images.imagePullSecrets }}
       imagePullSecrets:
         {{- range .Values.images.imagePullSecrets }}
-        -name: {{ .name }}
+        - name: {{ .name }}
         {{- end }}
       {{- end }}
       {{- if .Values.serviceAccounts.create }}
@@ -235,7 +235,7 @@ spec:
       {{- if .Values.images.imagePullSecrets }}
       imagePullSecrets:
         {{- range .Values.images.imagePullSecrets }}
-        -name: {{ .name }}
+        - name: {{ .name }}
         {{- end }}
       {{- end }}
       {{- if .Values.serviceAccounts.create }}
