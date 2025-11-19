@@ -19,7 +19,7 @@
 images:
   repository: design-libraries-docker-dev-local.artifactory.vcfd.broadcom.net
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "BBXxVt-hRVGOzkE_o3xB2Q"
+  tag: "CUR49JSvQc6VDxNdzxHOwA"
   imagePullSecrets:
     - name: artifactory-secret
 serviceAccounts:
