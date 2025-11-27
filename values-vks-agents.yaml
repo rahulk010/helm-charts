@@ -17,7 +17,7 @@
 # Declare variables to be passed into your templates.
 
 images:
-  repository: design-libraries-docker-dev-local.artifactory.vcfd.broadcom.net
+  repository: design-libraries-docker-dev-local.packages.vcfd.broadcom.net
   # Overrides the image tag whose default is the chart appVersion.
   tag: "krk_NZd1TmGiMZtZ06S_dQ"
   imagePullSecrets:
